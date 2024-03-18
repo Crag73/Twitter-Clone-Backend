@@ -6,7 +6,7 @@ import likeRoute from "./routes/like";
 import cookieParser from "cookie-parser";
 import retweetRoute from "./routes/retweet";
 const app =express();
-const PORT =3000;
+const PORT =process.env.PORT;
 app.use(cookieParser());
 app.use(express.json());
 app.set("view engine","hbs");
